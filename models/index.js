@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 
 const UserSchema = mongoose.Schema({
-  username: String,
-  pwd: String
-}, {
-  collection: 'user'
+  userName: {
+    type: String
+  },
+  pwd: {
+    type: String
+  }
 });
 const Models = {
   User: mongoose.model('User', UserSchema)

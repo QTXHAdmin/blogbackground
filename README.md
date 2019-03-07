@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -67,7 +66,44 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
+
 # blogbackground
-blog后台搭建
->>>>>>> e31b6ed784c02ca2bab0d7fdbd5a2aa5f4ca03e7
+
+blog 后台搭建
+
+# React+Nodejs+mongodb+Express 后台搭建
+
+## 1.初始化 package
+
+## 2.初始化 React
+
+```shell
+npm install -g create-react-app
+create-react-app todolist
+启动：yarn start
+```
+
+## 3.安装 express
+
+```shell
+npm install -g express-generator
+
+```
+
+## 4.安装 mongoose
+
+```shell
+npm install mongoose
+```
+
+## 5.启动本地 mongo 服务
+
+```shell
+mongod --dbpath data文件地址
+```
+
+## 4.创建 server 文件夹
+
+- app.js(入口文件)
+- db.js(设置数据库相关)
+- api.js(编写接口)(弃用)
