@@ -75,6 +75,10 @@ blog 后台搭建
 
 ## 1.初始化 package
 
+```shell
+npm install
+```
+
 ## 2.初始化 React
 
 ```shell
@@ -102,8 +106,17 @@ npm install mongoose
 mongod --dbpath data文件地址
 ```
 
-## 4.创建 server 文件夹
+## 6.创建 server 文件夹
 
 - app.js(入口文件)
 - db.js(设置数据库相关)
 - api.js(编写接口)(弃用)
+
+## 启动项目
+
+进入 server,使用 node 启动 express
+
+```shell
+node app.js
+
+```

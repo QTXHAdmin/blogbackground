@@ -8,10 +8,20 @@ const path = require('path');
 const bodyParser = require('body-parser');
 // 引入Express
 const express = require('express');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 const cors = require('cors');
+const validateUserLogin = require('./validate.js');
 const app = express();
 
 app.use(cors());
+app.use(cookieParser('sessionuser'));
+app.use(session({
+  secret: 'sessionuser',
+  resave: true,
+  saveUninitialized: true
+}));
+app.use(validateUserLogin);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
