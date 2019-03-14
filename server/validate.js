@@ -1,5 +1,5 @@
 const validateUser = function(req, res, next) {
-  // console.log(req.baseUrl);
+  console.log(req.baseUrl);
   var urlReg = new RegExp('/admin');
   console.log(req.originalUrl);
   // console.log(urlReg.test(req.originalUrl));
